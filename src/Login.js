@@ -3,10 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Login from './Login';
-import Router_R from './Router_R'
 
-class App extends React.Component {
+class Login extends React.Component {
 
   constructor(props) {
     super(props);
@@ -46,39 +44,21 @@ class App extends React.Component {
 
     return (
 
-      // <div className="App">
+      <div className="Login">
 
-      //   <h1>Login</h1>
-      //   <input name="username" onChange={this.handleInput} value={this.state.username} placeholder="Enter Username" /><br />
-      //   <input type="password" onChange={this.handleInput} value={this.state.password} name="password" placeholder="Enter Password" /><br />
-      //   <button onClick={this.login}>Login</button>
+        <h1>Login</h1>
+        <input name="username" onChange={this.handleInput} value={this.state.username} placeholder="Enter Username" /><br />
+        <input type="password" onChange={this.handleInput} value={this.state.password} name="password" placeholder="Enter Password" /><br />
+        <button onClick={this.login}>Login</button>
 
-      // </div>
-      <Router_R/>
+      </div>
+
 
     );
   }
 }
 
 
-
-// const RouterC = () => {
-//   return (
-//     <Router>
-//       <Switch>
-//         <Route path="/" exact component={Login} />
-//         <Route path="/success" exact component={() => {
-//           return (
-//             <div className="App">
-//               <h1>Login Success</h1>
-
-//             </div>
-//           )
-//         }} />
-//       </Switch>
-//     </Router>
-//   )
-// }
 
 
 // const App = () => {
@@ -94,4 +74,4 @@ class App extends React.Component {
 //         );
 // }
 
-export default App;
+export default Login;
